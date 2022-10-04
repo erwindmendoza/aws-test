@@ -5,12 +5,12 @@ provider:
   runtime: nodejs16.x
   stage: dev
   region: ap-southeast-1
+  deploymentBucket: awsnodejstraining
   environment:
     DYNAMODB_TABLE_NAME: ${self:custom.postsTableName}
 
 custom:
   postsTableName: posts-table-${self:provider.stage}
-  deploymentBucket: com.serverless.awsnodejstraining.deploys
 
 plugins:
   - serverless-iam-roles-per-function
