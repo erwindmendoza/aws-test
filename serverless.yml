@@ -10,6 +10,7 @@ provider:
 
 custom:
   postsTableName: posts-table-${self:provider.stage}
+  deploymentBucket: com.serverless.awsnodejstraining.deploys
 
 plugins:
   - serverless-iam-roles-per-function
