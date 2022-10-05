@@ -13,7 +13,7 @@ functions:
   app:
     handler: index.handler
     events:
-      - http: ANY /
+      - http: 'ANY /'
       - http: 'ANY {proxy+}'
 
 # custom:
